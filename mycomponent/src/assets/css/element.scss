@@ -1,0 +1,49 @@
+@import "./layout.scss";
+
+@mixin btn($size:14px,$color:#fff,$bgcolor:#f04752,$padding:5px,$radius:5px){
+  padding: $padding;
+  background-color: $bgcolor;
+  font-size: $size;
+  border-radius: $radius;
+  color: $color;
+  text-align: center;
+  line-height: 1;
+  display: inline-block;
+  border: 1px solid $bgcolor;
+}
+
+@mixin list($direction:column){
+  @include flex($direction);
+}
+
+@mixin panel($bgcolor:#fff,$padding:0,$margin:20px 0,$height:112px,$txtPadding:0 32px,$color:#333,$fontSize:32px){
+  background-color: $bgcolor;
+  padding: $padding;
+  margin: $margin;
+  >h4{
+    height: $height;
+    line-height: $height;
+    padding: $txtPadding;
+    color: $color;
+    font-size: $fontSize;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+}
+//颜色
+$menu-item: #5CCADC;
+$logo: #FFFF9E;
+$news-headline: #99565E;
+$icons: #C86E5D;
+$label-topbar: #FF9879;
+$label-picture: #CDB343;
+$label-selectbox: #F8D77D;
+$footer-link: #437D99;
+$text-color: #FFFFFF;
+$headline-color: #9BA3A9;
+$paragraph: #64635E;
+$highlight: #E55700;
+$searched-term: #F5A000;
+$success-link: #39B54A;
+$help-color: #7DA7D9;
