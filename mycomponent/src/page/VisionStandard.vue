@@ -5,6 +5,7 @@
             <p>Dashboard.com  |  Version 1.0.2</p>
             <ColourPalette></ColourPalette>
             <Typography></Typography>
+            <Examples></Examples>
         </div>
     </div>
 </template>
@@ -12,11 +13,13 @@
 <script>
 import ColourPalette from '../components/ColourPalette'
 import Typography from '../components/Typography'
+import Examples from '../components/Examples'
 export default {
   name: 'VisionStandard',
   components: {
     ColourPalette,
-    Typography
+    Typography,
+    Examples
   }
 }
 </script>
