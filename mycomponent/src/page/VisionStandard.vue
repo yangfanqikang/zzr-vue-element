@@ -6,6 +6,8 @@
             <ColourPalette></ColourPalette>
             <Typography></Typography>
             <Examples></Examples>
+            <Icons></Icons>
+            <Forms></Forms>
         </div>
     </div>
 </template>
@@ -14,12 +16,16 @@
 import ColourPalette from '../components/ColourPalette'
 import Typography from '../components/Typography'
 import Examples from '../components/Examples'
+import Icons from '../components/Icons'
+import Forms from '../components/Forms/Forms'
 export default {
   name: 'VisionStandard',
   components: {
     ColourPalette,
     Typography,
-    Examples
+    Examples,
+    Icons,
+    Forms
   }
 }
 </script>
