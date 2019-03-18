@@ -1,16 +1,20 @@
 <template lang="html">
     <div>
         <PrimaryTitle pTitle="Forms"></PrimaryTitle>
+        <div>
+            <InputEmpty></InputEmpty>
+        </div>
     </div>
 </template>
 
 <script>
 import PrimaryTitle from '../PrimaryTitle'
-
+import InputEmpty from './InputEmpty'
 export default {
   name: 'Forms',
   components: {
-    PrimaryTitle
+    PrimaryTitle,
+    InputEmpty
   },
   data () {
     return {

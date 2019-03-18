@@ -8,6 +8,7 @@
             <Examples></Examples>
             <Icons></Icons>
             <Forms></Forms>
+            <Card></Card>
         </div>
     </div>
 </template>
@@ -18,6 +19,7 @@ import Typography from '../components/Typography'
 import Examples from '../components/Examples'
 import Icons from '../components/Icons'
 import Forms from '../components/Forms/Forms'
+import Card from '../components/card/card'
 export default {
   name: 'VisionStandard',
   components: {
@@ -25,7 +27,8 @@ export default {
     Typography,
     Examples,
     Icons,
-    Forms
+    Forms,
+    Card
   }
 }
 </script>
