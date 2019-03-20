@@ -46,7 +46,7 @@ module.exports = {
     hotOnly: false,
     proxy: {
       '/api':{
-        target: 'http://localhost:8080/api',
+        target: 'https://www.easy-mock.com/mock/5c90925ed3d19731516d2dec/www.zouzhirui.xyz/',
         ws: true,
         changeOrigin: true,
         pathRewrite: {

@@ -1,6 +1,6 @@
 <template lang="html">
     <div>
-index
+        index
     </div>
 </template>
 

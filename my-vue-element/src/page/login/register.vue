@@ -41,13 +41,6 @@ export default {
       }
     }
     return {
-      formInline: {
-        user: '',
-        region: ''
-      },
-      dynamicValidateForm: {
-        email: ''
-      },
       registerUser: {
         name: '',
         email: '',
@@ -79,12 +72,14 @@ export default {
     submitForm (formName) {
       this.$refs[formName].validate((valid) => {
         if (valid) {
-          this.$axios.post('/api/user/register', this.registerUser)
+          this.$axios.post('/api/register', this.registerUser)
             .then(res => {
+              console.log(res)
               this.$message({
                 message: '账号注册成功',
                 type: 'success'
               })
+              this.$router.push('/login')
             })
         } else {
           console.log('error submit!!')
