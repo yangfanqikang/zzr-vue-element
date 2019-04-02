@@ -1,18 +1,18 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import HelloWorld from '@/components/HelloWorld'
 import Register from '@/page/login/register'
 import Login from '@/page/login/Login'
 import Vi from '@/page/VisionStandard'
+import Index from '@/page/home/index'
 Vue.use(Router)
 
 export default new Router({
   mode: 'history',
   routes: [
     {
-      path: '/',
-      name: 'HelloWorld',
-      component: HelloWorld
+      path: '',
+      name: 'Index',
+      component: Index
     },
     {
       path: '/login',
@@ -27,6 +27,11 @@ export default new Router({
       path: '/vi',
       name: 'Vi',
       component: Vi
+    },
+    {
+      path: '/index',
+      name: 'Index',
+      component: Index
     }
   ]
 })
