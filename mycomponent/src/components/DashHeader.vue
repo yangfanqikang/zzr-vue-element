@@ -24,6 +24,7 @@
                     style="width: 200px"
                     @search="onSearch"
             />
+            <a-button type="primary" icon="plus" style="background: #39B54A"/>
         </div>
     </div>
 </template>
@@ -43,25 +44,9 @@ export default {
     align-items: center;
     height: 69px;
     border-bottom: 1px solid #273142;
+    background:rgba(39,49,66,1);
 }
 .dashHeader>div>h3{
     color: #fff;
-}
-.ant-radio-button-wrapper{
-    background: #222C3C;
-    color: #7C8CA5;
-    border: 1px solid #313D4F;
-}
-.ant-radio-button-wrapper:first-child{
-    border-left: 1px solid #313D4F;
-}
-.ant-radio-button-wrapper:first-child{
-    border-left: 1px solid #313D4F;
-}
-.ant-radio-button-wrapper:last-child{
-    border-left: 1px solid #313D4F;
-}
-.ant-radio-button-wrapper:not(:first-child)::before{
-    background-color: #313D4F;
 }
 </style>

@@ -63,21 +63,6 @@ export default {
     display: flex;
     justify-content: space-between;
 }
-.ant-menu{
-    background:none;
-    color: #ddd;
-    border-bottom: none;
-    height: 68px;
-    line-height: 68px;
-    align-items: center;
-    font-size: 14px;
-}
-.ant-menu-horizontal > .ant-menu-item-selected, .ant-menu-horizontal > .ant-menu-item-active{
-    border-bottom: 2px solid #fff;
-    color: #fff;
-    height: 68px;
-    line-height: 68px;
-}
     .heador-left{
         display: flex;
         flex-flow: row nowrap;

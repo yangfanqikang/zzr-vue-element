@@ -5,6 +5,7 @@ import App from './App'
 import router from './router'
 import Antd from 'ant-design-vue'
 import 'ant-design-vue/dist/antd.css'
+import 'font-awesome/scss/font-awesome.scss'
 import Viser from 'viser-vue'
 
 Vue.use(Viser)
