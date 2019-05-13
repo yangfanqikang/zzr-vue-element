@@ -17,15 +17,17 @@
             <div class="page-1 page">
                 <p class="part-1 page-title" v-animate="{value: 'bounceInDown'}">Hello World</p>
                 <div class="page1-content">
-                    <div class="page1-img1"  v-animate="{value: 'bounceInLeft',delay: 800}">
+                    <div id="page1-img">
+                        <div class="page1-img1"  v-animate="{value: 'bounceInLeft',delay: 800}">
+                        </div>
+                        <div class="page1-img2" v-animate="{value: 'bounceInLeft',delay: 1200}">
+                            <p><font-awesome-icon icon="book" /> <span>1111111111111</span></p>
+                            <p><font-awesome-icon icon="book" /> <span>1111111111111</span></p>
+                            <p><font-awesome-icon icon="book" /><span>1111111111111</span></p>
+                            <p><font-awesome-icon icon="book" /> <span>1111111111111</span></p>
+                            <p><font-awesome-icon icon="book" /><span>1111111111111</span></p>
+                        </div>
                     </div>
-                   <div class="page1-img2" v-animate="{value: 'bounceInLeft',delay: 1200}">
-                       <p><font-awesome-icon icon="book" /> <span>1111111111111</span></p>
-                       <p><font-awesome-icon icon="book" /> <span>1111111111111</span></p>
-                       <p><font-awesome-icon icon="book" /><span>1111111111111</span></p>
-                       <p><font-awesome-icon icon="book" /> <span>1111111111111</span></p>
-                       <p><font-awesome-icon icon="book" /><span>1111111111111</span></p>
-                   </div>
                    <div id="person-des" v-animate="{value: 'zoomIn', delay: 600}">
                        <p>玉不琢，不成器；人不学，不知道——《礼记》</p>
                        <h2>工程师</h2>
@@ -93,6 +95,14 @@ export default {
     width: 100%;
 }
 .page1-content>div{
+    position: absolute;
+}
+#page1-img{
+    width: 100%;
+    background-color: red;
+    height: 100%;
+}
+#page1-img>div{
     position: absolute;
 }
 .page1-img1{
@@ -187,49 +197,5 @@ export default {
     .page-3{
         background-color: dodgerblue;
     }
-@media only screen and (min-width: 1600px) {
-    .page1-content{
-        width: 38%;
-    }
-}
-@media only screen and (min-width: 1450px) {
-    .page1-content{
-        width: 45%;
-    }
-}
-    @media only screen and (min-width: 768px) {
-        .page1-content{
-            width: 58%;
-            left: 50%;
-            transform: translate(-50%);
-        }
-        .page1-img1{
-            width: 212px;
-            height: 500px;
-            left: 170px;
-        }
-        .page1-img2{
-            width: 360px;
-            height: 304px;
-            left: 229px;
-            top: 142px;
-        }
-        #person-des{
-            top: 20px;
-        }
-        .page1-img2>p{
-            font-size: 16px;
-            margin-left: 110px;
-            line-height: 60px;
-        }
-        .page1-img2>p>span{
-            margin-left: 10px;
-        }
-        .page1-img2>p:nth-last-child(2){
-            margin-top: 5px;
-        }
-        .page1-img2>p:nth-last-child(1){
-            margin-top: 4px;
-        }
-    }
+
 </style>
